@@ -1,12 +1,30 @@
 {
-  "name": "gmail-checker",
-  "version": "1.0.0",
-  "description": "",
+  "name": "checkgmail",
+  "version": "1.0.1",
+  "description": "This gmail-check library provides the way to know the existence of gmail mailbox written in server-side JavaScript.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amansharma5/gmail-check.git"
+  },
+  "keywords": [
+    "email",
+    "gmail check",
+    "email check",
+    "check gmail",
+    "mailbox existence"
+  ],
+  "author": {
+    "name":"Aman Sharma",
+    "email": "amansharma5@hotmail.com",
+    "url": "https://www.linkedin.com/in/aman-sharma-0a95a0b5/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amansharma5/gmail-check/issues"
+  },
+  "homepage": "https://github.com/amansharma5/gmail-check#readme"
 }

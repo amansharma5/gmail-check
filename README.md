@@ -1,22 +1,22 @@
-# gmail-check
+# checkgmail
 Check gmail existence.
 
-This gmail-check library provides the way to know the existence of gmail mailbox written in server-side JavaScript.
+This checkgmail library provides the way to know the existence of gmail mailbox written in server-side JavaScript.
 
 ###Installation
 Install the package with:
 ```
-npm install gmail-check
+npm install checkgmail
 ```
 ### Include 
 ```javascript
-var gmailCheck = require('gmail-check');
+var checkGmail = require('checkgmail');
 ```
 
 ### Example Using async/await
 ```javascript
 
-let result = await gmailCheck("abc@xyz.com"); // gmail address to test
+let result = await checkGmail("abc@xyz.com"); // gmail address to test
 console.log(result)  ///// status : "success" (if exists) || status : "failed" (if doesn't exists)
 -- Do Something --
 ```

@@ -2,7 +2,8 @@ const net = require('net')
 
 let status = {
     failed : {status : "failed",message : "Email doesn't exists"},
-    success:{status : "success",message: "Email exists"}
+    success:{status : "success",message: "Email exists"},
+    error : {status: "Error", message : "Email syntax error"}
 }
 module.exports = async(payloadData)=>{
   return await new Promise((resolve, reject)=>{
@@ -23,6 +24,9 @@ module.exports = async(payloadData)=>{
               if(result.includes('550-5.1.1')){
                   resolve(status.failed);
                   socket.destroy();
+              }else if(result.includes('555 5.5.2')){
+                resolve(status.error);
+                socket.destroy();
               }else if(result.includes('221 2.0.0 closing connection')) {
                   socket.end();
               }else if(i < commands.length) {
